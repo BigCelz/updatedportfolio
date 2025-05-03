@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/updatedportfolio/static/css/main.a2282336.css",
+    "main.js": "/updatedportfolio/static/js/main.fde6735d.js",
+    "static/js/453.1407b060.chunk.js": "/updatedportfolio/static/js/453.1407b060.chunk.js",
+    "static/media/storeImg.png": "/updatedportfolio/static/media/storeImg.06b7bf16fc43fc7b5a80.png",
+    "static/media/nyscImg.png": "/updatedportfolio/static/media/nyscImg.2436e27722592e0a0b08.png",
+    "static/media/weatherappImg.png": "/updatedportfolio/static/media/weatherappImg.dd54bc979bcf2f60addf.png",
+    "static/media/dashboardImg.png": "/updatedportfolio/static/media/dashboardImg.38cf781d360c4febf276.png",
+    "static/media/hero3.png": "/updatedportfolio/static/media/hero3.c1bd4d5d86616b0c419a.png",
+    "static/media/slick.svg": "/updatedportfolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/updatedportfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/updatedportfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/updatedportfolio/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/updatedportfolio/index.html",
+    "main.a2282336.css.map": "/updatedportfolio/static/css/main.a2282336.css.map",
+    "main.fde6735d.js.map": "/updatedportfolio/static/js/main.fde6735d.js.map",
+    "453.1407b060.chunk.js.map": "/updatedportfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2282336.css",
+    "static/js/main.fde6735d.js"
+  ]
+}
