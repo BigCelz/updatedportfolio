@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Hero from "./components/Hero";
+import Navigation from "./components/Navigation";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Services from "./components/Services";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Form from "./components/Form";
+import Footer from "./components/Footer";
 
-function App() {
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/form" element={<Form/>}/>
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;
