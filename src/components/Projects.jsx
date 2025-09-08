@@ -9,32 +9,35 @@ const Projects = () => {
           My Projects
         </h2>
 
-        <div className="grid gap-8 !md:gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 md:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {project.map((project, index) => (
             <div
               key={index}
-              className="bg-white border border-black rounded-lg shadow-sm hover:shadow-md transition duration-300 flex flex-col"
+              className="bg-white border rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col overflow-hidden"
             >
+              {/* Image */}
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover rounded-t-lg"
+                className="w-full h-48 object-cover"
               />
 
-          
+              {/* Content */}
               <div className="flex flex-col flex-grow p-6">
-                <h3 className="text-xl font-semibold mb-2  text-gray-800">{project.title}</h3>
-                <p className="text-gray-700 mb-4 flex-grow">
+                <h3 className="text-xl font-bold mb-2 text-gray-900">
+                  {project.title}
+                </h3>
+                <p className="text-gray-600 mb-4 flex-grow">
                   {project.description}
                 </p>
 
-      
+                {/* Button */}
                 <div className="pt-4 mt-auto border-t">
                   <a
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block w-full text-center px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600 transition duration-300"
+                    className="inline-block w-full text-center px-4 py-2.5 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition duration-300"
                   >
                     Visit Project
                   </a>
